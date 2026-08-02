@@ -1,8 +1,26 @@
 aid: the-ok-company
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-ok-company.png
 name: The OK Company
-description: The OK Company is a company surfaced as a portfolio company of obvious-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: The OK Company was a consumer technology startup, backed by Obvious Ventures, best known
+  for OK Play - a mobile app for iOS and Android that turned screen time into a catalyst for real-world,
+  parent-and-child play activities designed to build empathy, kindness, and creativity in young children.
+  It was founded by CEO JJ Aguhob and President Chris Ovitz (previously co-founders of the mobile video
+  app Viddy), with developmental psychologist Dr. Colleen Russo Johnson as Chief Scientist. As of this
+  enrichment pass the company appears defunct - its domain theokcompany.com no longer resolves to a product
+  site and instead redirects to a third-party domain-sale listing. The OK Company was a consumer mobile
+  app business and never published a public developer API, SDK, or developer platform, so there is no API
+  surface to enrich. This profile is retained as a historical portfolio-company lead.
 url: https://raw.githubusercontent.com/api-evangelist/the-ok-company/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +28,19 @@ x-backed-by:
 - obvious-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: 'domain theokcompany.com redirects to a domain-sale listing; no active product or API surface'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer
+- Mobile Apps
+- Parenting
+- Children
+- EdTech
+- Play
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: https://theokcompany.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
