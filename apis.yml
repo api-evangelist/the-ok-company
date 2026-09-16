@@ -18,11 +18,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://theokcompany.com
+    status: 302
+    note: declared website redirects to hugedomains.com — a domain sales/parking service, so the domain
+      has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://theokcompany.com', status: 302, note: 'declared website redirects to hugedomains.com — a domain sales/parking service, so the domain has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-ok-company.png
 name: The OK Company
 description: The OK Company was a consumer technology startup, backed by Obvious Ventures, best known
@@ -32,8 +34,8 @@ description: The OK Company was a consumer technology startup, backed by Obvious
   app Viddy), with developmental psychologist Dr. Colleen Russo Johnson as Chief Scientist. As of this
   enrichment pass the company appears defunct - its domain theokcompany.com no longer resolves to a product
   site and instead redirects to a third-party domain-sale listing. The OK Company was a consumer mobile
-  app business and never published a public developer API, SDK, or developer platform, so there is no API
-  surface to enrich. This profile is retained as a historical portfolio-company lead.
+  app business and never published a public developer API, SDK, or developer platform, so there is no
+  API surface to enrich. This profile is retained as a historical portfolio-company lead.
 url: https://raw.githubusercontent.com/api-evangelist/the-ok-company/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -42,10 +44,11 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct
-x-status-reason: 'domain theokcompany.com redirects to a domain-sale listing; no active product or API surface'
+x-status-reason: domain theokcompany.com redirects to a domain-sale listing; no active product or API
+  surface
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-15'
 tags:
 - Company
 - Consumer
@@ -54,6 +57,7 @@ tags:
 - Children
 - EdTech
 - Play
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
